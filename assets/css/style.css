@@ -3,19 +3,25 @@ h1 {
     font-size: 7.2rem;
     font-weight: medium;
 }
+h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-block-end: 2.4rem;
+}
 .sec-hero {
     padding-block: 30px;
 }
 nav.horse-hub  {
     display: flex;
     column-gap: 6rem;
-    padding-inline: 4rem;
+    
     margin-block-end: 30px;
     
 }
 .horse-hub-item {
     opacity: 0.7;
     position: relative;
+    padding-inline-start: 4rem;
 }
 .horse-hub-item.active {
     opacity: 1;
@@ -32,9 +38,19 @@ nav.horse-hub  {
     top: 50%;
     transform: translateY(-50%);
     color: var(--clr-white);
-    width: calc(100% * 722 / 1920);
+    width: calc(100% * 747 / 1920);
 
 }
 .hero-content .desc {
     line-height: 2;
+    margin-block-end: 4.8rem;
+    font-size: 2rem;
+}
+
+/* sec-01  */
+.sec-01 {
+    padding: 60px 0;
+}
+.sec-01 h2+p {
+    margin-block-end: 4.8rem;
 }
