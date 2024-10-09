@@ -367,7 +367,7 @@
     margin-bottom: 1.6rem;
 }
 
-.accordion-item h5 {
+.accordion-header p {
     font-size: 3.2rem;
     font-weight: 700;
     padding-block: 2.4rem;
