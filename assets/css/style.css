@@ -6,7 +6,7 @@ h1 {
 h2 {
     font-size: 4.8rem;
     font-weight: 600;
-    margin-block-end: 2.4rem;
+    margin-block-end: 24px;
 }
 .sec-hero {
     padding-block: 30px;
@@ -48,9 +48,31 @@ nav.horse-hub  {
 }
 
 /* sec-01  */
+section:not(.sec-hero) {
+    padding: 60px;
+}
+section:not(.sec-hero) h2+p {
+    margin-block-end: 4.8rem;
+    line-height: 2;
+}
 .sec-01 {
     padding: 60px 0;
 }
-.sec-01 h2+p {
-    margin-block-end: 4.8rem;
+
+.sec-02-lists {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    column-gap: 1.2rem;
+}
+.sec-02-lists > li {
+    padding: 4rem 4rem;
+    background-color: var(--clr-white);
+    border-radius: 1.2rem;
+}
+.sec-02-lists > li [alt="sec-02-list-item"] {
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+.sec-02-lists > li p {
+    line-height: 2;
 }
