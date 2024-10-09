@@ -59,6 +59,9 @@ section:not(.sec-hero) h2+p {
     padding: 60px 0;
 }
 
+
+/* sec-02 */
+
 .sec-02-lists {
     display: grid;
     grid-template-columns: repeat(4, minmax(0,1fr));
@@ -75,4 +78,10 @@ section:not(.sec-hero) h2+p {
 }
 .sec-02-lists > li p {
     line-height: 2;
+}
+
+/* sec-03 */
+
+.sec-03 {
+    
 }

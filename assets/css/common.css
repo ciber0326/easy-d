@@ -64,6 +64,10 @@
     font-size: 24px;
 }
 
+.text-32 {
+    font-size: 3.2rem;
+}
+
 .font-code {
     font-family: var(--font-code);
 }
@@ -79,6 +83,10 @@
 
 .bg-clr-white {
     background-color: white;
+}
+
+.bg-clr-purple {
+    background-color: var(--clr-purple);
 }
 
 /* cursor */
@@ -368,9 +376,11 @@
     background-image: url("../img/icon-accordion-plus.png");
     transition: background-image 0.3s ease-in-out;
 }
+
 .accordion-item.active::after {
     background-image: url("../img/icon-accordion-minus.png");
 }
+
 .accordion-body {
     font-size: 20px;
     line-height: 1.8;
@@ -470,4 +480,250 @@ div.preview-img {
     top: 1.4rem;
 
 
+}
+
+
+/* tab */
+
+/* Tab container */
+
+.tab-container {
+    width: 122.2rem;
+    max-width: 100%;
+    margin: 0 auto;
+
+    --clr-active-tab: #22246a;
+    --clr-active-border: 1px solid #D9D9D9;
+}
+
+/* Tab headers */
+.tab-headers {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    /* margin-bottom: 2rem; */
+    font-size: 24px;
+    border: 1px solid #60618A;
+    border-bottom: none;
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.tab-headers li {
+    /* margin-right: 10px; */
+    width: calc(100% / 3);
+    position: relative;
+
+}
+
+
+.tab-headers a {
+    display: inline-block;
+    width: 100%;
+    padding: 22px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 1.2rem 1.2rem 0 0;
+
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+}
+
+.tab-headers li.active a {
+    background-color: var(--clr-active-tab);
+    border: var(--clr-active-border);
+    border-bottom: none;
+    color: #fff;
+}
+
+.tab-headers li.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: 95%;
+    left: 0;
+    background-color: var(--clr-active-tab);
+    border-left: var(--clr-active-border);
+
+
+}
+
+/* Tab content */
+.tab-content {
+    border: var(--clr-active-border);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 1.2rem;
+    background-color: var(--clr-active-tab);
+}
+
+/* Hide inactive tabs */
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: flex;
+    column-gap: 1.2rem;
+}
+
+.tab-title {
+    background-color: var(--clr-purple);
+    background-image: url(../img/tab-icon-ellapse.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.tab-img-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10.4rem;
+    background-color: var(--clr-purple);
+    background-image: url("../img/tab-area-ellapse.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.tab-img-area {
+    margin-block-start: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10.4rem !important;
+    background-color: var(--clr-purple);
+    background-image: url("../img/tab-area-ellapse.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* tab accordion */
+
+/* Basic styling */
+.tab-accordion-lists {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Styling each accordion item */
+
+
+/* Header styling */
+.tab-accordion-header {
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: bold;
+    background-color: var(--clr-purple);
+    color: var(--clr-white);
+    padding: 1.6rem 6rem;
+    padding-inline-start: 8rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.tab-accordion-header:hover {
+    opacity: 0.8;
+}
+
+.tab-img {
+    width: 40%;
+    flex: 0 0 auto;
+}
+
+.tab-img>div {
+    border-radius: 1.2rem;
+    overflow: hidden;
+    padding: 1.6rem 1.6rem;
+}
+
+/* Body styling */
+.tab-accordion-body {
+    display: none;
+    /* Initially hidden */
+    background-color: var(--clr-purple);
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Active header when accordion is open */
+.tab-accordion-header.active {}
+
+.tab-accordion-item {
+    border-radius: 1.2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.tab-accordion-item:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+[alt="tab-img"] {
+    width: 31.8rem;
+}
+
+.squre-before-left-20::before {
+    left: 5%;
+}
+
+.tab-accordion-item::after {
+    content: "";
+    position: absolute;
+    top: 1.4rem;
+    right: 3rem;
+    width: 29px;
+    aspect-ratio: 1 / 1;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-white-plus.png);
+    transition: background-image 0.3s ease-in-out;
+}
+
+.tab-accordion-item.active::after {
+    background-image: url("../img/icon-white-minus.png");
+}
+
+.tab-content-lists li {
+    position: relative;
+    padding-inline-start: 6rem;
+}
+
+.tab-content-lists li::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    aspect-ratio: 1/1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.3rem;
+    background-image: url(../img/icon-checkbox.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.tab-content-lists li:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+.tab-content-lists li p {
+    margin-block: 0;
+}
+
+.tab-content-lists li p.text-20 {
+    font-weight: 600;
+    margin-block-end: 1.2rem;
 }
