@@ -1,0 +1,241 @@
+/* container */
+.o-container {
+    padding-inline: 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.half-top-right {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+.flex {
+    display: flex;
+}
+.flex-y-center {
+    align-items: center;
+}
+.flex-x-center {
+    justify-content: center;
+}
+.flex-center {
+    
+    justify-content: center;
+    align-items: center;
+}
+.flex-between {
+    justify-content: space-between;
+}
+
+.round {
+    border-radius: 50%;
+}
+.aspect-square {
+    aspect-ratio: 1/1;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.transition-normal {
+    transition: 0.3s all ease-in-out;
+}
+
+/* font */
+.text-20 {
+    font-size: 20px;
+}
+.font-code {
+    font-family: var(--font-code);
+}
+
+.w-fit {
+    width: fit-content;
+}
+/* background */
+.bg-lgt-clr-grey {
+    background-color: var(--clr-lgt-grey);
+}
+.bg-clr-white {
+    background-color: white;
+}
+/* cursor */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* dropdown */
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    width: fit-content;
+}
+
+.custom-select {
+    position: relative;
+    cursor: pointer;
+}
+
+.select-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    column-gap: 1rem;
+}
+
+.select-trigger .arrow {
+    border: solid var(--clr-black);
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+.custom-select.open .select-trigger .arrow {
+    transform: rotate(-135deg);
+}
+
+.custom-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.custom-select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+}
+
+.custom-option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.custom-option:hover {
+    background: #f2f2f2;
+}
+
+.custom-option.selected {
+    background: #e0e0e0;
+    pointer-events: none;
+}
+
+/* dropdown */
+
+/* Dropdown Wrapper */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown:hover [aria-label="arrow-down"] {
+    transform: rotate(180deg);
+    transition: 0.3s all ease-in-out;
+}
+
+[aria-label="arrow-down"] {
+
+    top: 40%;
+    right: 2rem;
+}
+
+/* Dropdown Trigger */
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+[aria-label="dropdown-href"] {
+    display: flex;
+    padding-block: 10px;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+/* Arrow Down */
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--clr-black);
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+/* Rotate Arrow when dropdown is open */
+.dropdown.open .arrow-down {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Lists */
+.dropdown-lists {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 160px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+/* Dropdown Items */
+
+.dropdown-lists li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-lists li a:hover {
+    background-color: #f2f2f2;
+}
+
+/* blue squre before  */
+
+.blue-squre-before::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    width: 20px;
+    aspect-ratio: 1/1;
+    background-color: var(--clr-lgt-blue);
+}

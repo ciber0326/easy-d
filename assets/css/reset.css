@@ -1,6 +1,40 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
+}
+
+:root {
+    --font-inter: "Inter", sans-serif;
+    --font-code: "Source Code Pro", monospace;
+    --clr-thick-blue: #0309BB;
+    --clr-lgt-blue: #1482FF;
+    --clr-grey: #ebedf0;
+    --clr-lgt-grey: #F1F1F1;
+    --clr-red: #FF2E00;
+    --clr-black: #090909;
+    --clr-lgt-Black: #313131;
+    --clr-white: #ffffff;
+
+    --border-blue: 1px solid var(--clr-lgt-blue);
+
+}
+
+html {
+    font-size: clamp(6px, calc(1000vw / 1920), 10px);
 }
 body {
     padding: 0 0;
+    margin: 0 0;
+    font-family: var(--font-inter);
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-black);
 }

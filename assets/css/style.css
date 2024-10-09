@@ -1,0 +1,40 @@
+/* sec-hero */
+h1 {
+    font-size: 7.2rem;
+    font-weight: medium;
+}
+.sec-hero {
+    padding-block: 30px;
+}
+nav.horse-hub  {
+    display: flex;
+    column-gap: 6rem;
+    padding-inline: 4rem;
+    margin-block-end: 30px;
+    
+}
+.horse-hub-item {
+    opacity: 0.7;
+    position: relative;
+}
+.horse-hub-item.active {
+    opacity: 1;
+}
+/* hero */
+[alt="img-hero"] {
+    right: 104px;
+    top: 60px;
+    max-width: 800px;
+    width: calc(100% * 800 / 1920);
+}
+.hero-content {
+    left: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--clr-white);
+    width: calc(100% * 722 / 1920);
+
+}
+.hero-content .desc {
+    line-height: 2;
+}
