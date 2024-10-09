@@ -331,10 +331,100 @@
     font-weight: 700;
     padding-block: 2.4rem;
 }
+.accordion-header {
+    cursor: pointer;
+}
 .accordion-header > span {
     padding-inline-start: 4rem;
 }
 .accordion-body {
     font-size: 20px;
     line-height: 1.8;
+}
+
+
+
+
+
+/* .accordion */
+.accordion-preview {
+    display: flex;
+    gap: 2rem;
+}
+
+.accordion-lists {
+    width: 50%;
+}
+
+.accordion-item {
+    background-color: var(--clr-white);
+    border-radius: 1.2rem;
+    padding: 3.2rem 4rem;
+    cursor: pointer;
+}
+
+.accordion-lists .accordion-item:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.accordion-item h5 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding-block: 2.4rem;
+}
+
+.accordion-header {
+    cursor: pointer;
+}
+
+.accordion-header > span {
+    padding-left: 4rem;
+}
+
+.accordion-body {
+    font-size: 20px;
+    line-height: 1.8;
+    display: none; /* Initially hidden */
+}
+
+[alt="preview-img"] {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 68rem;
+    max-width: 66%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 1.2rem;
+}
+[alt="preview-bg"] {
+    width: 100%;
+}
+div.preview-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+.lists--blue-checkbox li {
+    position: relative;
+    padding-inline-start: 4rem;
+}
+.lists--blue-checkbox li::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-checkbox.png");
+    width: 24px;
+    height: 16px;
+    background-size: 100% 100%;
+    background-position: center center;
+    left: 0;
+    top: 2rem;
+    
+
 }
