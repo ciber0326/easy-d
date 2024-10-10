@@ -199,10 +199,113 @@ p.sec-06-item-title {
 .support-lists li.unchecked::before {
     background-image: url("../img/icon-circle-cross.png");
 }
+
 .support-lists li.empty::before {
     content: none;
 }
 
 .support-lists li:not(:last-child) {
     margin-bottom: 2px;
+}
+
+
+/* sec 08 */
+.btn-map {
+    border: 1px solid #3356F6;
+    color: #3356F6;
+}
+.btn-map:hover {
+    background-color: #3356F6;
+    color: var(--clr-white);
+}
+.map-panel {
+    position: relative;
+    background-color: #F6F6FE;
+    width: 34rem;
+    flex: 0 0 auto;
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+}
+.map-wrapper {
+    display: flex;
+    
+    
+}
+.map-panel .btn.btn-map {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+[alt="map-img"] {
+    flex: 0 0 auto;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.map-sub-title {
+    padding-inline-start: 6rem;
+    position: relative;
+}
+.map-sub-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    aspect-ratio: 1/1;
+    background-color: var(--clr-lgt-blue);
+}
+
+/* sec-09 */
+.sec-09 {
+    background-color: #0309BB;
+    background-image: url("../img/mosaic-bg.png");
+    background-position: center 0;
+    background-size: 100%;
+    background-blend-mode: multiply;
+    
+}
+.sec-09-lists {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    column-gap: 1.2rem;
+}
+[alt="devices-img"] {
+    width: 100%;
+}
+.sec-09-lists > li {
+    background-color: var(--clr-white);
+    padding: 4rem;
+    border-radius: 1.2rem;
+}
+[alt="mosaic-img"] {
+
+}
+.sec-09-title {
+    display: flex;
+    align-items: center;
+    column-gap: 3.2rem;
+    font-size: 3.2rem;
+}
+.mosaic-lists li {
+    line-height: 2;
+    padding-inline-start: 4rem;
+    position: relative;
+}
+.mosaic-lists li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.2rem;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    background-image: url("../img/icon-checkbox.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
