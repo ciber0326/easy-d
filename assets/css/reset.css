@@ -16,6 +16,7 @@
     --clr-lgt-Black: #313131;
     --clr-white: #ffffff;
     --clr-purple: #04063c;
+    --clr-primary: #F6F6F6;
 
     --border-blue: 1px solid var(--clr-lgt-blue);
 
@@ -40,10 +41,12 @@ a {
     text-decoration: none;
     color: var(--clr-black);
 }
+
 ul {
     padding-left: 0;
     margin: 0 0;
 }
+
 h2,
 h3,
 h4,
