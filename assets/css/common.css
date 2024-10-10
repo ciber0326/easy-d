@@ -89,6 +89,13 @@
     background-color: var(--clr-purple);
 }
 
+/* color */
+.clr-blue {
+    color: var(--clr-lgt-blue);
+}
+.clr-white {
+    color: var(--clr-white);
+}
 /* cursor */
 .cursor-pointer {
     cursor: pointer;
@@ -413,7 +420,7 @@
 
 .accordion-header p {
     margin-block: 0;
-    padding-block: 2.4rem;
+    padding-block: 0;
     font-size: 3.2rem;
     font-weight: 700;
 
@@ -425,9 +432,11 @@
 
 .accordion-header>span {
     padding-left: 4rem;
+    margin-block-end: 2.2rem;
+    display: inline-block;
 }
-
 .accordion-body {
+    padding-block: 4rem;
     font-size: 20px;
     line-height: 1.8;
     display: none;

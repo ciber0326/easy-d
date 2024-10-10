@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
     //custom select
     const $customSelect = $('.custom-select');
@@ -37,9 +35,6 @@ $(document).ready(function () {
         }
     );
 
-
-
-
     // Usage
     const images = [
         './assets/img/sec-01-preview-01.png',
@@ -56,51 +51,6 @@ $(document).ready(function () {
     const accordion1 = new Accordion('.accordion-preview-01', images);
     const accordion2 = new Accordion('.accordion-preview-02', images);
     const accordion3 = new Accordion('.accordion-preview-03', images_section7);
-
-
-    // const accordion2 = new Accordion('.accordion-container-2', images2);
-
-    // // Preload images (Update these with actual image URLs)
-    // const images = [
-    //     './assets/img/sec-01-preview-01.png',
-    //     './assets/img/sec-01-preview-02.png',
-    //     './assets/img/sec-01-preview-03.png',
-    //     './assets/img/sec-01-preview-04.png',
-    // ];
-
-    // // Set the first accordion item as active by default
-    // $('.accordion-item').first().addClass('active');
-    // $('.accordion-body').first().slideDown(); // Show the first item's content
-    // $('.preview-img img[alt="preview-img"]').attr('data-src', images[0]); // Set the first image as the data-src
-    // $('.preview-img img[alt="preview-img"]').addClass('lazyload').css('opacity', 1); // Lazy load and set opacity
-
-    // // Attach click event to accordion items
-    // $('.accordion-item').on('click', function () {
-    //     // If this accordion item is already active, do nothing
-    //     if ($(this).hasClass('active')) {
-    //         return; // Exit the function if the item is already active
-    //     }
-
-    //     // Remove active class from all items
-    //     $('.accordion-item').removeClass('active');
-    //     // Close all accordion bodies
-    //     $('.accordion-body').slideUp();
-
-    //     // Activate the clicked accordion item
-    //     $(this).addClass('active');
-    //     $(this).find('.accordion-body').slideDown();
-
-    //     // Get the index of the clicked accordion item
-    //     const index = $(this).index();
-
-    //     // Change the image in the preview area with fade-in/fade-out effect
-    //     $('.preview-img img[alt="preview-img"]').fadeOut(400, function () {
-    //         $(this).attr('data-src', images[index]) // Change the data-src attribute
-    //             .removeClass('lazyload')         // Remove lazyload class
-    //             .addClass('lazyload')            // Add lazyload again to trigger loading
-    //             .fadeIn(400);                    // Fade in the new image
-    //     });
-    // });
 
 
     // tab
