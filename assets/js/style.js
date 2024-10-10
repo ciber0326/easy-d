@@ -40,16 +40,22 @@ $(document).ready(function () {
 
 
 
-// Usage
-const images = [
-    './assets/img/sec-01-preview-01.png',
-    './assets/img/sec-01-preview-02.png',
-    './assets/img/sec-01-preview-03.png',
-    './assets/img/sec-01-preview-04.png',
-];
+    // Usage
+    const images = [
+        './assets/img/sec-01-preview-01.png',
+        './assets/img/sec-01-preview-02.png',
+        './assets/img/sec-01-preview-03.png',
+        './assets/img/sec-01-preview-04.png',
+    ];
+    const images_section7 = [
+        './assets/img/sec-07-preview-01.png',
+        './assets/img/sec-07-preview-02.png',
+        './assets/img/sec-07-preview-03.png',
+    ];
 
-const accordion1 = new Accordion('.accordion-preview-01', images);
-const accordion2 = new Accordion('.accordion-preview-02', images);
+    const accordion1 = new Accordion('.accordion-preview-01', images);
+    const accordion2 = new Accordion('.accordion-preview-02', images);
+    const accordion3 = new Accordion('.accordion-preview-03', images_section7);
 
 
     // const accordion2 = new Accordion('.accordion-container-2', images2);
