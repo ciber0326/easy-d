@@ -1,0 +1,26 @@
+footer {
+    --footer-bg: #040636;
+    background-color: var(--footer-bg);
+    color: var(--clr-white);
+    padding: 12.6rem 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+[alt="footer-logo"] {
+    width: 23rem;
+}
+
+.footer-big-nav a {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.6rem 3.2rem;
+    border-radius: 1.2rem;
+    color: var(--clr-white);
+    width: 19.2rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.6rem;
+}
