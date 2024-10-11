@@ -391,10 +391,10 @@ label.confirm {
 /* sec-06 */
 
 .sec-05-lists li {
-    background-color:#494DCE;
+    background-color: #494DCE;
     flex: 0 0 auto;
     width: 18%;
-    min-width: 240px;
+    min-width: 260px;
     border-radius: 1.2rem;
     padding: 1.6rem;
     display: flex;
@@ -404,12 +404,15 @@ label.confirm {
     border: 1px solid var(--clr-white);
     color: var(--clr-white);
 }
+
 .sec-05-lists li.active {
     background-color: transparent;
 }
+
 .sec-05-nav-content .title {
     font-size: 2.4rem;
 }
+
 .sec-05-lists {
     display: flex;
     flex-wrap: wrap;
@@ -417,4 +420,42 @@ label.confirm {
     align-items: center;
     column-gap: 2rem;
     row-gap: 2rem;
+    margin-bottom: 3.2rem;
+}
+
+.sec-05 .tab-accordion-header {
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: bold;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    padding: 1.6rem 6rem;
+    padding-inline-start: 8rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.sec-05 .tab-accordion-body {
+    display: none;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.sec-05 .tab-accordion-item::after {
+    content: "";
+    position: absolute;
+    top: 3.3rem;
+    right: 3rem;
+    width: 29px;
+    aspect-ratio: 1 / 1;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-accordion-plus.png);
+    transition: background-image 0.3s ease-in-out;
+}
+.sec-05 .tab-accordion-item.active::after {
+    background-image: url(../img/icon-accordion-plus.png);
 }
