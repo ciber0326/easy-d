@@ -3,11 +3,20 @@ footer {
     background-color: var(--footer-bg);
     color: var(--clr-white);
     padding: 12.6rem 0;
+    --clr-footer-grey: #B8B8B8;
+    --grey-border: 1px solid #B8B8B8;
+}
+
+footer a {
+    color: #B8B8B8;
 }
 
 .footer-nav {
     display: flex;
     justify-content: space-between;
+    padding-block-end: 10rem;
+    border-bottom: var(--grey-border);
+    margin-bottom: 6.4rem;
 }
 
 [alt="footer-logo"] {
@@ -23,4 +32,104 @@ footer {
     display: inline-block;
     text-align: center;
     font-size: 1.6rem;
+}
+
+.footer-sub-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-block-end: 10rem;
+    border-bottom: var(--grey-border);
+    margin-bottom: 6.4rem;
+}
+
+.footer-sub-col {
+    flex: 0 0 auto;
+    width: 20%;
+    font-size: 2rem;
+}
+
+.footer-sub-col ul {
+    margin-block-start: 2rem;
+}
+
+.footer-sub-col ul li {
+    line-height: 2;
+    font-size: 1.6rem;
+}
+
+.offer-title {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    column-gap: 1.6rem;
+    margin-block: 0 2rem;
+}
+
+.offer-title svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.offer-desc {
+    color: var(--clr-footer-grey);
+}
+
+[aria-label="learn-more"] {
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+    width: fit-content;
+
+}
+
+[aria-label="learn-more"]:hover svg {
+    transform: translateX(10%);
+}
+
+[aria-label="learn-more"] svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: 0.3s transform ease-in-out;
+}
+
+[aria-label="offer-item"] {
+    border: var(--grey-border);
+    padding: 2.4rem;
+    display: inline-block;
+    border-radius: 1.2rem;
+    
+}
+.gradient-border {
+    z-index: 1;
+    
+}
+.gradient-border::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.2rem);
+    height: calc(100% + 0.2rem);
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.offer-lists {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 2rem;
+}
+[name="offer_email"] {
+    display: block;
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 1.2rem;
+    outline: none;
+    background-color: transparent;
+    color: var(--clr-white);
+    margin-block-end: 1.2rem;
+    border: var(--grey-border);
+}
+.offer-email-desc {
+    margin-block: 1.2rem;
 }
