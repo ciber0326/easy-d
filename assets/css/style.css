@@ -459,3 +459,30 @@ label.confirm {
 .sec-05 .tab-accordion-item.active::after {
     background-image: url(../img/icon-accordion-plus.png);
 }
+.discount-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--clr-white);
+    padding: 6rem 6rem;
+    border-radius: 1.6rem;
+    margin-top: 1.6rem;
+}
+.discount-wrapper .content {
+    padding-inline-end: 4.8rem;
+    width: 40%;
+}.discount-wrapper .content h3 {
+    font-size: 4.8rem;
+    margin-block-end: 4rem;
+}
+.discount-wrapper [alt="discount-img"] {
+    width: 60%;
+}
+.discount-wrapper .lists--blue-checkbox li {
+    margin-bottom: 1.2rem;
+}
+.discount-wrapper .btn-lgt-blue {
+    margin-block-start: 6rem;
+    display: inline-block;
+}
