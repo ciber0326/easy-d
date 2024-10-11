@@ -106,6 +106,9 @@
 .bg-clr-primary {
     background-color: var(--clr-primary);
 }
+.bg-clr-thick-blue  {
+    background-color: var(--clr-thick-blue);
+}
 
 /* color */
 .clr-blue {
