@@ -346,7 +346,7 @@ p.sec-06-item-title {
     padding-inline: 1.2rem;
 }
 .form-container label {
-    display: none;
+    opacity: 0;
 }
 .form-container textarea {
     width: 100%;
