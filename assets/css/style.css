@@ -455,11 +455,11 @@ label.confirm {
     background-position: center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: url(../img/icon-accordion-plus.png);
+    background-image: url(../img/icon-accordion-plus.svg);
     transition: background-image 0.3s ease-in-out;
 }
 .sec-05 .tab-accordion-item.active::after {
-    background-image: url(../img/icon-accordion-plus.png);
+    background-image: url(../img/icon-accordion-plus.svg);
 }
 .discount-wrapper {
     display: flex;

@@ -516,7 +516,7 @@ div.preview-img {
 .lists--blue-checkbox li::after {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-checkbox.png");
+    background-image: url("../img/icon-checkbox.svg");
     width: 24px;
     height: 16px;
     background-size: 100% 100%;
