@@ -55,8 +55,19 @@ footer a {
 .footer-sub-col ul li {
     line-height: 2;
     font-size: 1.6rem;
+    padding-inline: 2rem;
 }
-
+.footer-sub-col ul li a {
+    
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    padding: 1.2rem 1.2rem;
+    transition: 0.3s opacity ease-in-out;
+}
+.footer-sub-col ul li a:hover {
+    opacity: 0.6;
+}
 .offer-title {
     display: flex;
     align-items: center;

@@ -304,7 +304,7 @@
 .btn {
     padding: 2rem 4.8rem;
     border-radius: 8px;
-    font-family: medium;
+    font-weight: medium;
     text-transform: uppercase;
     margin-inline: 6px;
     transition: 0.3s all ease-in-out;
@@ -415,12 +415,12 @@
     background-position: center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: url("../img/icon-accordion-plus.png");
+    background-image: url("../img/icon-accordion-plus.svg");
     transition: background-image 0.3s ease-in-out;
 }
 
 .accordion-item.active::after {
-    background-image: url("../img/icon-accordion-minus.png");
+    background-image: url("../img/icon-accordion-minus.svg");
 }
 
 .accordion-body {
@@ -733,12 +733,12 @@ div.preview-img {
     background-position: center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: url(../img/icon-white-plus.png);
+    background-image: url(../img/icon-white-plus.svg);
     transition: background-image 0.3s ease-in-out;
 }
 
 .tab-accordion-item.active::after {
-    background-image: url("../img/icon-white-minus.png");
+    background-image: url("../img/icon-white-minus.svg");
 }
 
 .tab-content-lists li {
@@ -754,7 +754,7 @@ div.preview-img {
     top: 50%;
     transform: translateY(-50%);
     left: 1.3rem;
-    background-image: url(../img/icon-checkbox.png);
+    background-image: url(../img/icon-checkbox.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
