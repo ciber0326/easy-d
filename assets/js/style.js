@@ -37,10 +37,10 @@ $(document).ready(function () {
 
     // Usage
     const images = [
-        './assets/img/sec-01-preview-01.png',
-        './assets/img/sec-01-preview-02.png',
-        './assets/img/sec-01-preview-03.png',
-        './assets/img/sec-01-preview-04.png',
+        './assets/img/sec-01-preview-01.svg',
+        './assets/img/sec-01-preview-02.svg',
+        './assets/img/sec-01-preview-03.svg',
+        './assets/img/sec-01-preview-04.svg',
     ];
     const images_section7 = [
         './assets/img/sec-07-preview-01.png',
