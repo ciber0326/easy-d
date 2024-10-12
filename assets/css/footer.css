@@ -20,7 +20,8 @@ footer a {
 }
 
 [alt="footer-logo"] {
-    width: 23rem;
+    flex: 0 0 auto;
+    aspect-ratio: 229 / 75;
 }
 
 .footer-big-nav a {

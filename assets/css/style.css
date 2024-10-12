@@ -345,7 +345,9 @@ p.sec-06-item-title {
     padding-block: 1.2rem;
     padding-inline: 1.2rem;
 }
-
+.form-container label:has(textarea) {
+    width: 100%;
+}
 .form-container textarea {
     width: 100%;
     padding-block: 1.2rem;
