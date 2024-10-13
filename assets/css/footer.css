@@ -198,6 +198,15 @@ footer a {
     justify-content: space-between;
     padding: 1.6rem 0;
 }
+.social-nav {
+    display: flex;
+    align-items: center;
+}
+.footer-big-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
 @media screen and (max-width: 1340px) {
     .footer-big-nav {
         display: none;
