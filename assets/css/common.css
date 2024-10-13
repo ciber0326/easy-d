@@ -420,7 +420,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url("../img/icon-accordion-plus.svg");
-    transition: background-image 0.3s ease-in-out;
+    
 }
 
 .accordion-item.active::after {
@@ -738,7 +738,7 @@ div.preview-img {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url(../img/icon-white-plus.svg);
-    transition: background-image 0.3s ease-in-out;
+    
 }
 
 .tab-accordion-item.active::after {
