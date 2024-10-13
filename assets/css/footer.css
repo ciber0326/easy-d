@@ -239,3 +239,34 @@ footer a {
         padding: 6.6rem 0 0;
     }
 }
+@media screen and (max-width: 426px) {
+    .footer-sub-col {
+        width: 100%;
+        font-size: 16px;
+    }
+    .footer-sub-col ul li a {
+        
+        font-size: 14px;
+    }
+    .footer-card-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 1.2rem;
+    }
+    [alt="social-img"] {
+        width: 36px;
+        height: auto;
+    }
+    footer a:has([alt="social-img"]) {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+    }
+    .social-nav {
+        display: flex;
+        align-items: center;
+    }
+    .footer-sub-nav {
+        padding-inline: 6rem;
+    }
+}
