@@ -45,3 +45,13 @@ button.get-started:hover {
     background-color: var(--clr-grey);
     
 }
+@media screen and (max-width: 900px) {
+    .global-menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 560px) {
+    .pre-header >  span {
+        display: none;
+    }
+}
