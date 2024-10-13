@@ -107,6 +107,9 @@ nav.horse-hub {
         min-width: unset;
         width: 90%;
     }
+    .hero-content .desc {
+        font-size: 16px;
+    }
 }
 
 /* sec-01  */
@@ -211,7 +214,12 @@ p.sec-06-item-title {
 .support-lists-desc {
     padding: 1.6rem 4rem;
 }
-
+@media screen and (max-width: 425px) {
+    p.sec-06-item-title {
+        font-size: 16px;
+     
+    }
+}
 /* sec-06 */
 .sec-06 {}
 
