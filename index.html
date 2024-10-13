@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="preload" href="./assets/img/hero.svg" as="image">
+    <link rel="preload" href="./assets/img/hero-sp.svg" as="image">
     <link rel="preload" href="./assets/img/discount-img.png" as="image">
 </head>
 
@@ -146,8 +147,12 @@
                 <article class="hero relative">
                     <img data-src="./assets/img/hero-backbround.svg" class="lazyload w-full" width="1840" height="719"
                         alt="hero-bg">
-                    <img data-src="./assets/img/hero.svg" class="lazyload absolute animate-float" alt="img-hero"
-                        width="800" height="536.74">
+                    <!-- <img data-src="./assets/img/hero.svg" class="lazyload absolute animate-float" alt="img-hero"
+                        width="800" height="536.74"> -->
+                    <img data-src="./assets/img/hero.svg" 
+                    srcset="./assets/img/hero-sp.svg 480w , ./assets/img/hero.svg 1024w" width="400" height="300"
+                        class="lazyload absolute animate-float" alt="img-hero">
+
                     <div class="hero-content absolute">
                         <h1>Join the club and <br> become a partner.</h1>
                         <p class="desc">
