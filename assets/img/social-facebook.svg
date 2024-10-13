@@ -1,26 +1,3 @@
-<svg width="49" height="130" viewBox="0 0 49 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_bdi_133_932)">
-<path d="M28.3965 18.5233H29.9992V15.2871C29.0936 15.1465 28.118 15.0059 27.2124 15.0059C24.3555 15.0059 22.335 16.7646 22.335 19.9301V22.7437H19.1992V26.2612H22.3346V35.4059H26.5165V34.7982H26.5148V26.2608H29.3017L29.8591 22.7433H26.5148V20.2812C26.5148 19.2962 26.8634 18.5225 28.3961 18.5225L28.3965 18.5233Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_bdi_133_932" x="-28.1038" y="-27.4983" width="104.208" height="169.783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="14.0519"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_133_932"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="37.4717" operator="erode" in="SourceAlpha" result="effect2_dropShadow_133_932"/>
-<feOffset dy="74.9435"/>
-<feGaussianBlur stdDeviation="28.1038"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
-<feBlend mode="multiply" in2="effect1_backgroundBlur_133_932" result="effect2_dropShadow_133_932"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_133_932" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="9.36793"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="shape" result="effect3_innerShadow_133_932"/>
-</filter>
-</defs>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.3965 17.9178H29.9992V14.6816C29.0936 14.541 28.118 14.4004 27.2124 14.4004C24.3555 14.4004 22.335 16.1591 22.335 19.3246V22.1383H19.1992V25.6557H22.3346V34.8004H26.5165V34.1927H26.5148V25.6553H29.3017L29.8591 22.1378H26.5148V19.6757C26.5148 18.6907 26.8634 17.917 28.3961 17.917L28.3965 17.9178Z" fill="white"/>
 </svg>
