@@ -843,4 +843,15 @@ div.preview-img {
         top: 20%;
         width: 3.2rem;
     }
+    .accordion-header p {
+        font-size: 18px;
+    }
+    .accordion-body {
+        padding-block: 2rem;
+        font-size: 16px;
+    }
+    .accordion-body li {
+        font-size: 16px;
+    }
+    
 }

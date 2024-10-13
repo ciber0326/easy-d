@@ -45,6 +45,11 @@ nav.horse-hub {
      
     }
 }
+@media screen and (max-width: 426px) {
+    h2 {
+        font-size: 22px;
+    }
+}
 /* hero */
 [alt="img-hero"] {
     right: 104px;
@@ -126,7 +131,11 @@ section:not(.sec-hero) h2+p {
     padding: 60px 0;
 }
 
-
+@media screen and (max-width: 426px) {
+    section:not(.sec-hero) h2+p {
+        font-size: 16px;
+    }
+}
 /* sec-02 */
 
 .sec-02-lists {
@@ -317,6 +326,15 @@ p.sec-06-item-title {
 @media screen and (max-width: 426px) {
     .support-lists-desc>span {
         display: none;
+    }
+    .support-col-title {
+     
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .sec-06-lists {
+        width: 100%;
+     
     }
 }
 /* sec 08 */
