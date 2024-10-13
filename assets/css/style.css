@@ -13,7 +13,9 @@ h2 {
 .sec-hero {
     padding-block: 30px;
 }
-
+[alt="hero-bg"] {
+    aspect-ratio: 1840 / 719;
+}
 nav.horse-hub {
     display: flex;
     column-gap: 6rem;

@@ -52,7 +52,6 @@ $(document).ready(function () {
     const accordion2 = new Accordion('.accordion-preview-02', images);
     const accordion3 = new Accordion('.accordion-preview-03', images_section7);
 
-
     // tab
 
     // Object to store the active accordion index for each tab
