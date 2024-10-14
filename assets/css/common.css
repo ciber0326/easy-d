@@ -624,10 +624,10 @@ div.preview-img {
 
 .tab-title {
     background-color: var(--clr-purple);
-    background-image: url(../img/tab-icon-ellapse.png);
+    background-image: url(../img/tab-icon-ellapse.svg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     display: flex;
     align-items: center;
     column-gap: 2rem;
@@ -639,7 +639,7 @@ div.preview-img {
     justify-content: center;
     padding-block: 10.4rem;
     background-color: var(--clr-purple);
-    background-image: url("../img/tab-area-ellapse.png");
+    background-image: url("../img/tab-area-ellapse.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -652,7 +652,7 @@ div.preview-img {
     justify-content: center;
     padding-block: 10.4rem !important;
     background-color: var(--clr-purple);
-    background-image: url("../img/tab-area-ellapse.png");
+    background-image: url("../img/tab-area-ellapse.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;

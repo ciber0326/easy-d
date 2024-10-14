@@ -301,14 +301,14 @@ p.sec-06-item-title {
     left: 2.4rem;
     width: 3.2rem;
     aspect-ratio: 1/1;
-    background-image: url("../img/icon-circle-checkbox.png");
+    background-image: url("../img/icon-circle-checkbox.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
 }
 
 .support-lists li.unchecked::before {
-    background-image: url("../img/icon-circle-cross.png");
+    background-image: url("../img/icon-circle-cross.svg");
 }
 
 .support-lists li.empty::before {
@@ -704,9 +704,11 @@ label.confirm {
     font-weight: 700;
 
 }
+
 .sec-05-accordion-item.active::after {
     background-image: url("../img/icon-accordion-minus.svg");
 }
+
 .sec-05-accordion-item::after {
     content: "";
     position: absolute;
