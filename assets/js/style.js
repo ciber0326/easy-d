@@ -128,6 +128,29 @@ $(document).ready(function () {
         $('.support-area [alt="arrow-up"]').toggleClass('rotate');
     });
 
+    // Hide all accordion bodies except the first one
+    $('.sec-05-accordion-body').hide();
+    $('.sec-05-accordion-item:first-child .sec-05-accordion-body').show();
+    $('.sec-05-accordion-item:first-child').addClass('active'); // Add .active class to the first item
+
+    // Handle click event for accordion headers
+    $('.sec-05-accordion-header').click(function () {
+        // Remove .active class from all items
+        $('.sec-05-accordion-item').removeClass('active');
+
+        // Close all accordion bodies
+        $('.sec-05-accordion-body').slideUp();
+
+        // Open the clicked accordion body if it's hidden
+        if ($(this).next('.sec-05-accordion-body').is(':hidden')) {
+            $(this).next('.sec-05-accordion-body').slideDown();
+            // Add .active class to the clicked item
+            $(this).parent('.sec-05-accordion-item').addClass('active');
+        }
+    });
+
+
+
 
 
 });
