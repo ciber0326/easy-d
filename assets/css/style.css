@@ -217,8 +217,13 @@ p.sec-06-item-title {
     cursor: pointer;
 
 }
-
-.support-area [alt="arrow-up"] {}
+.support-area [alt="arrow-up"] {
+    transition: 0.3s all ease-in-out;
+}
+.support-area [alt="arrow-up"].rotate {
+    transform: rotate(540deg);
+    transform-origin: center center;
+}
 
 .support-lists-desc {
     padding: 1.6rem 4rem;
