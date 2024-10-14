@@ -420,12 +420,6 @@ p.sec-06-item-title {
 /* sec-09 */
 .sec-09 {
     background-color: #0309BB;
-    background-image: url("../img/mosaic-bg.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: 100%;
-    background-blend-mode: multiply;
-
 }
 
 .sec-09-lists {
