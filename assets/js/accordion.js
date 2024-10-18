@@ -1,9 +1,11 @@
 class Accordion {
   constructor(accordionSelector, images) {
+    this.preloadImages();
     this.accordionElement = $(accordionSelector);
     this.images = images;
     this.currentImageIndex = 0; // Track current image
     this.init();
+        this.preloadImages();
   }
 
   init() {
@@ -16,6 +18,13 @@ class Accordion {
     this.accordionElement.find(".accordion-item").on("click", (e) => {
       this.handleAccordionClick($(e.currentTarget));
     });
+  }
+
+  preloadImages() {
+      this.images.forEach((imageSrc) => {
+          const img = new Image();
+          img.src = imageSrc; // Preload the image
+      });
   }
 
   handleAccordionClick(item) {
