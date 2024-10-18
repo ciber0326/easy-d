@@ -41,6 +41,10 @@ $(document).ready(function () {
         './assets/img/sec-01-preview-02.svg',
         './assets/img/sec-01-preview-03.svg',
         './assets/img/sec-01-preview-04.svg',
+        './assets/img/sec-01-preview-01.svg',
+        './assets/img/sec-01-preview-02.svg',
+        './assets/img/sec-01-preview-03.svg',
+        './assets/img/sec-01-preview-04.svg',
     ];
     const images_section7 = [
         './assets/img/sec-07-preview-01.svg',

@@ -54,16 +54,16 @@ class Accordion {
     this.currentImageIndex = index;
 
     // Use fadeOut and preload the new image before fading in
-    img.slideUp(400, () => {
+    img.slideUp(300, () => {
       img
         .attr("src", newSrc)
         .on("load", () => {
-          img.slideDown(400) // Smooth fade-in after loading
+          img.slideDown(300) // Smooth fade-in after loading
         })
         .off("error")
         .on("error", () => {
           console.error("Failed to load image:", newSrc);
-          img.slideDown(400); // Still fade in to avoid empty space
+          img.slideDown(300); // Still fade in to avoid empty space
         });
     });
   }
