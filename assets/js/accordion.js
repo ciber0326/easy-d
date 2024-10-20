@@ -1,8 +1,8 @@
 class Accordion {
   constructor(accordionSelector, images) {
+    this.images = images;
     this.preloadImages();
     this.accordionElement = $(accordionSelector);
-    this.images = images;
     this.currentImageIndex = 0; // Track current image
     this.init();
         this.preloadImages();
