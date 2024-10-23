@@ -128,7 +128,7 @@ $(document).ready(function () {
 
     $('[aria-label="view-more-support"]').on('click', function () {
         // Toggle the .support-nav element with a slide effect
-        $('.support-nav').slideToggle();
+        $('.support-nav .support-lists').slideToggle();
         $('.support-area [alt="arrow-up"]').toggleClass('rotate');
     });
 
