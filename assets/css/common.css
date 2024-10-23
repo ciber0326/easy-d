@@ -411,7 +411,7 @@
 .accordion-header>span {
     padding-inline-start: 4rem;
 }
-
+/* 
 .accordion-item::after {
     content: "";
     position: absolute;
@@ -428,7 +428,7 @@
 
 .accordion-item.active::after {
     background-image: url("../img/icon-accordion-minus.svg");
-}
+} */
 
 .accordion-body {
     font-size: 20px;
@@ -588,6 +588,16 @@ div.preview-img {
     border: var(--clr-active-border);
     border-bottom: none;
     color: #fff;
+    position: relative;
+    height: 100%;
+}
+
+.tab-headers li:first-child.active a {
+    left: -0.5px;
+}
+
+.tab-headers li:last-child.active a {
+    right: -0.5px;
 }
 
 .tab-headers li.active::after {
@@ -595,12 +605,26 @@ div.preview-img {
     position: absolute;
     width: 100%;
     height: 10px;
-    top: 95%;
-    left: 0;
+    bottom: 0px;
     background-color: var(--clr-active-tab);
+    z-index: 10;
+    /* border-right: var(--clr-active-border); */
+}
+
+.tab-headers li:first-child.active::after {
     border-left: var(--clr-active-border);
+    left: -0.5px;
+}
 
+.tab-headers li:nth-child(2).active::after {
+    border-color: transparent;
+    left: 0px;
+}
 
+.tab-headers li:last-child.active::after {
+    right: -0.5px;
+    border-right: var(--clr-active-border);
+    /* border-right: var(--clr-active-border); */
 }
 
 /* Tab content */
@@ -730,7 +754,7 @@ div.preview-img {
 .squre-before-left-20::before {
     left: 5%;
 }
-
+/* 
 .tab-accordion-item::after {
     content: "";
     position: absolute;
@@ -747,7 +771,7 @@ div.preview-img {
 
 .tab-accordion-item.active::after {
     background-image: url("../img/icon-white-minus.svg");
-}
+} */
 
 .tab-content-lists li {
     position: relative;

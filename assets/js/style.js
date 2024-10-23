@@ -153,7 +153,7 @@ $(document).ready(function () {
         }
     });
 
-
+    $(".accordion-item .accordion-header, .tab-accordion-item .tab-accordion-header, .sec-05-accordion-item .sec-05-accordion-header p").append('<div class="circle"><div class="plusminus"></div></div>')
 
 
 
