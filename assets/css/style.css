@@ -957,7 +957,7 @@ label.confirm {
 }
 
 .sec-hero .o-container .wrap{
-  background-image: url('/assets/img/hero-backbround.svg');
+  background-image: url('../img/hero-backbround.svg');
   background-size: cover;
   padding: 8.75rem 10rem 12.5rem;
 }
