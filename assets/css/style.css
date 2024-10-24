@@ -1020,17 +1020,7 @@ label.confirm {
     width: 100%;
   }
 }
-/* 
-.sec-06 .row {
-  display: flex;
-}
 
-.sec-06 .support-lists-desc {
-  width: 50%;
+.sec-03 .tab-content-lists .secondary{
+  opacity: 0.8;
 }
-
-@media screen and (max-width: 1024px) {
-  .sec-06 .row {
-    flex-direction: column;
-  }
-} */
