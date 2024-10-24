@@ -29,7 +29,13 @@ nav.horse-hub {
 .horse-hub-item {
   opacity: 0.7;
   position: relative;
-  padding-inline-start: 4rem;
+  padding-inline-start: 44px;
+}
+
+@media screen and (max-width: 768px) {
+  .horse-hub-item {
+    padding-inline-start: 32px;
+  }
 }
 
 .horse-hub-item.active {
@@ -131,6 +137,12 @@ section:not(.sec-hero) {
   padding: 60px 0;
 }
 
+@media screen  and (max-width: 768px) {
+  section:not(.sec-hero) {
+    padding: 32px 0;
+  }
+}
+
 section:not(.sec-hero) h2 + p {
   margin-block-end: 4.8rem;
   line-height: 2;
@@ -176,7 +188,7 @@ section:not(.sec-hero) h2 + p {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 640px) {
   .sec-02-lists {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     row-gap: 1.2rem;
@@ -427,6 +439,7 @@ p.sec-06-item-title {
   top: 50%;
   transform: translateY(-50%);
   width: 2rem;
+  min-width: 20px;
   aspect-ratio: 1/1;
   background-color: var(--clr-lgt-blue);
 }
@@ -451,6 +464,12 @@ p.sec-06-item-title {
   .map-panel {
     width: 100%;
   }
+}
+/* sec-08 */
+.sec-08 .selected-country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* sec-09 */
@@ -508,14 +527,14 @@ p.sec-06-item-title {
 @media screen and (max-width: 768px) {
   .sec-09-lists {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    row-gap: 1.2rem;
+    row-gap: 16px;
     width: 80%;
     min-width: 420px;
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 520px) {
   .sec-09-lists {
     width: 100%;
     min-width: unset;
@@ -624,12 +643,33 @@ label.confirm {
   align-items: center;
   justify-content: center;
   column-gap: 2rem;
-  border: 1px solid var(--clr-white);
   color: var(--clr-white);
 }
 
 .sec-05-lists li.active {
   background-color: transparent;
+  border-color:var(--clr-white);
+}
+
+.sec-05-lists li {
+  position: relative;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.28);
+  border: 1px solid transparent;
+  transition: all var(--trans-300);
+  height: 100%;
+  border-radius: 12px;
+}
+
+.sec-05-lists li:hover {
+  --hot-deal-background: #fff;
+  --hot-deal-price-color: var(--color-my-easy-grey);
+  --hot-deal-logo-color: var(--color-blue-black);
+  background: var(--hot-deal-background, var(--color-brand));
+  box-shadow: 0px 40px 100px 0px rgba(84, 146, 206, 0.7);
+  transform: translateY(-10px);
+  color: #494dce;
+  font-weight: bold;
 }
 
 .sec-05-nav-content .title {
@@ -865,6 +905,18 @@ label.confirm {
   height: 40px;
 }
 
+@media screen and (max-width: 886px) {
+  .plusminus {
+    width: 16px;
+    height: 16px;
+  }
+
+  .circle {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .sec-01 .accordion-item .circle {
   position: absolute;
   top: 0px;
@@ -930,6 +982,16 @@ label.confirm {
 @media screen and (max-width: 768px) {
   .sec-07 .accordion-item {
     padding: 24px 32px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sec-07 .accordion-item {
+    padding: 16px 20px;
+  }
+
+  .sec-07 .circle {
+    top: -6px;
   }
 }
 

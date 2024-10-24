@@ -55,7 +55,7 @@ button.get-started:hover {
         display: none;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 465px) {
     .nav-user>a {
         display: none;
     }
