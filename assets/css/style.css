@@ -640,7 +640,7 @@ label.confirm {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   column-gap: 2rem;
   row-gap: 2rem;
   margin-bottom: 3.2rem;
