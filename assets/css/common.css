@@ -546,7 +546,7 @@ div.preview-img {
     margin: 0 auto;
 
     --clr-active-tab: #22246a;
-    --clr-active-border: 1px solid #D9D9D9;
+    /* --clr-active-border: 1px solid #D9D9D9; */
 }
 
 /* Tab headers */
@@ -560,6 +560,13 @@ div.preview-img {
     border: 1px solid #60618A;
     border-bottom: none;
     border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.tab-headers {
+    border: 1px solid #60618A00;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(96, 97, 138, 0);
 }
 
 .tab-headers li {
