@@ -590,20 +590,21 @@ div.preview-img {
     color: #fff;
     position: relative;
     height: 100%;
+    top: -1px;
 }
 
 .tab-headers li:first-child.active a {
-    left: -0.5px;
+    left: -1px;
 }
 
 .tab-headers li:last-child.active a {
-    right: -0.5px;
+    right: -1px;
 }
 
 .tab-headers li.active::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: calc(100% - 1px);
     height: 10px;
     bottom: 0px;
     background-color: var(--clr-active-tab);
@@ -613,16 +614,17 @@ div.preview-img {
 
 .tab-headers li:first-child.active::after {
     border-left: var(--clr-active-border);
-    left: -0.5px;
+    left: -1px;
 }
 
 .tab-headers li:nth-child(2).active::after {
     border-color: transparent;
-    left: 0px;
+    left: 1px;
+    width: calc(100% - 2px);
 }
 
 .tab-headers li:last-child.active::after {
-    right: -0.5px;
+    right: -1px;
     border-right: var(--clr-active-border);
     /* border-right: var(--clr-active-border); */
 }
