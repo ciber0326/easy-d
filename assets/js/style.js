@@ -152,9 +152,18 @@ $(document).ready(function () {
             $(this).parent('.sec-05-accordion-item').addClass('active');
         }
     });
+
     $(".sec-05-lists > li").click(function () {
         $(".sec-05-lists > li").removeClass("active")
         $(this).addClass("active")
+    })
+    
+    $(".map-container div").click(function () {
+        $(".map-container div").removeClass("active")
+        $(this).addClass("active")
+        const country = $(this).text();
+        $("#active_country_name").html(country)
+        $("#active_country_flag").attr('src', `./assets/img/flag-${country.toLowerCase()}.svg`)
     })
 
     $(".accordion-item .accordion-header, .tab-accordion-item .tab-accordion-header, .sec-05-accordion-item .sec-05-accordion-header p").append('<div class="circle"><div class="plusminus"></div></div>')

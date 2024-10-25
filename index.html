@@ -1753,12 +1753,13 @@
             <div class="map-panel">
               <p class="selected-country">
                 <img
-                  src="./assets/img/usa-flag.svg"
+                  src="./assets/img/flag-u.s.a.svg"
                   alt="usa-flag"
                   width="24"
                   height="24"
+                  id="active_country_flag"
                 />
-                <span> U.S.A </span>
+                <span id="active_country_name"> U.S.A </span>
               </p>
               <p class="text-24 map-sub-title">Γιατί Η.Π.Α.</p>
               <p>
@@ -1774,17 +1775,23 @@
               <a href="javascript:;" class="btn btn-map"> learn more </a>
             </div>
             <!-- <img data-src="./assets/img/map-img.svg" class="lazyload" alt="map-img" width="1341" height="684"> -->
-            <img
-              data-src="./assets/img/map-img.svg"
-              srcset="
-                ./assets/img/map-img-sp.svg  426w,
-                ./assets/img/map-img.svg    1024w
-              "
-              width="1341"
-              height="684"
-              class="lazyload"
-              alt="map-img"
-            />
+            <div class="map-container">
+              <img
+                data-src="./assets/img/map-img.svg"
+                srcset="
+                  ./assets/img/map-img-sp.svg  426w,
+                  ./assets/img/map-img.svg    1024w
+                "
+                class="lazyload"
+                alt="map-img"
+              />
+              <div class="maker marker-usa active">U.S.A</div>
+              <div class="maker marker-canada">Canada</div>
+              <div class="maker marker-france">France</div>
+              <div class="maker marker-germany">Germany</div>
+              <div class="maker marker-greece">Greece</div>
+              <div class="maker marker-australia">Australia</div>
+            </div>
           </div>
         </div>
       </section>
