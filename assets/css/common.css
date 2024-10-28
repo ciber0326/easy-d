@@ -830,7 +830,6 @@ div.preview-img {
 }
 @media screen and (max-width: 768px) {
     .accordion-preview {
-     
         flex-wrap: wrap;
     }
     div.preview-img {

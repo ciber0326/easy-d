@@ -32,8 +32,9 @@ nav.horse-hub {
   padding-inline-start: 44px;
 }
 
-main > section > .o-container {
-  max-width: 1840px;
+main > section > .o-container,
+footer > .o-container{
+  max-width: 1920px;
   margin: auto;
 }
 
@@ -725,6 +726,9 @@ label.confirm {
 .sec-05-lists li.active {
   background-color: transparent;
   border-color:var(--clr-white);
+  background-image: url('../img/badge-bg-selected.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .sec-05-lists li {
@@ -741,11 +745,15 @@ label.confirm {
   --hot-deal-background: #fff;
   --hot-deal-price-color: var(--color-my-easy-grey);
   --hot-deal-logo-color: var(--color-blue-black);
-  background: var(--hot-deal-background, var(--color-brand));
-  box-shadow: 0px 40px 100px 0px rgba(84, 146, 206, 0.7);
-  transform: translateY(-10px);
-  color: #494dce;
-  font-weight: bold;
+  box-shadow: 0px 0px 40px 0px rgba(84, 146, 206, 0.7);
+}
+
+.sec-05-lists li img{
+  transition: scale 0.3s;
+}
+
+.sec-05-lists li:hover img{
+  scale: 1.3;
 }
 
 .sec-05-nav-content .title {
