@@ -32,6 +32,11 @@ nav.horse-hub {
   padding-inline-start: 44px;
 }
 
+main > section > .o-container {
+  max-width: 1840px;
+  margin: auto;
+}
+
 @media screen and (max-width: 768px) {
   .horse-hub-item {
     padding-inline-start: 32px;
