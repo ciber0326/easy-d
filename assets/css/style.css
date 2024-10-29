@@ -770,6 +770,24 @@ label.confirm {
   margin-bottom: 3.2rem;
 }
 
+.sec-05-accordion-lists .discount {
+  position: relative;
+}
+
+.sec-05-accordion-lists .discount-number {
+  position: absolute;
+  height: 36px;
+  padding-left: 20px;
+  text-align: center;
+  color: white;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
 .sec-05 .tab-accordion-header {
   cursor: pointer;
   font-size: 2.4rem;
