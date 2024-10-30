@@ -158,7 +158,6 @@ $(document).ready(function () {
         $(this).addClass("active")
         const value = $(this).attr('data-value') || 10
         $(".sec-05 .discount-number span:nth-child(2)").text(value)
-        console.log(value)
     })
     
     $(".map-container div").click(function () {

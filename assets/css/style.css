@@ -1194,3 +1194,10 @@ label.confirm {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 1024px) {
+  .map-container {
+    margin-top: 24px;
+    width: 100%;
+  }
+}
