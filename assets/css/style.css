@@ -33,7 +33,7 @@ nav.horse-hub {
 }
 
 main > section > .o-container,
-footer > .o-container{
+footer > .o-container {
   max-width: 1920px;
   margin: auto;
 }
@@ -80,7 +80,7 @@ footer > .o-container{
   min-width: 480px;
 }
 
-.hero-content h1{
+.hero-content h1 {
   margin-top: 0px;
 }
 
@@ -143,7 +143,7 @@ section:not(.sec-hero) {
   padding: 60px 0;
 }
 
-@media screen  and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   section:not(.sec-hero) {
     padding: 32px 0;
   }
@@ -439,7 +439,7 @@ p.sec-06-item-title {
   font-size: 20px;
 }
 
-.map-container div{
+.map-container div {
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 12.5px;
@@ -464,6 +464,35 @@ p.sec-06-item-title {
   transform: translate(-25.8%, -110%);
 }
 
+@media screen and (max-width: 1640px) {
+  .map-container .maker {
+    width: 140px;
+    height: 66px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .map-container .maker {
+    width: 120px;
+    height: 56px;
+    padding-left: 16px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .map-container .maker {
+    width: 15%;
+    min-width: 100px;
+    background-size: contain;
+    padding: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: transparent !important;
+    font-size: 6px;
+  }
+}
+
 .map-container .active {
   color: white;
   background-image: url("../img/map-indicator-active.svg");
@@ -480,8 +509,8 @@ p.sec-06-item-title {
 }
 
 .marker-france {
-  top: 35.4%;
-  left: 50%;
+  top: 37.4%;
+  left: 48%;
 }
 
 .marker-germany {
@@ -497,6 +526,56 @@ p.sec-06-item-title {
 .marker-australia {
   top: 79%;
   left: 86.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .marker-canada {
+    background-image: url("../img/map-indicator-canada.svg") !important;
+  }
+
+  .marker-usa {
+    background-image: url("../img/map-indicator-u.s.a.svg") !important;
+  }
+
+  .marker-france {
+    background-image: url("../img/map-indicator-france.svg") !important;
+  }
+
+  .marker-germany {
+    background-image: url("../img/map-indicator-germany.svg") !important;
+  }
+
+  .marker-greece {
+    background-image: url("../img/map-indicator-greece.svg") !important;
+  }
+
+  .marker-australia {
+    background-image: url("../img/map-indicator-australia.svg") !important;
+  }
+
+  .marker-canada.active {
+    background-image: url("../img/map-indicator-activate-canada.svg") !important;
+  }
+
+  .marker-usa.active {
+    background-image: url("../img/map-indicator-activate-u.s.a.svg") !important;
+  }
+
+  .marker-france.active {
+    background-image: url("../img/map-indicator-activate-france.svg") !important;
+  }
+
+  .marker-germany.active {
+    background-image: url("../img/map-indicator-activate-germany.svg") !important;
+  }
+
+  .marker-greece.active {
+    background-image: url("../img/map-indicator-activate-greece.svg") !important;
+  }
+
+  .marker-australia.active {
+    background-image: url("../img/map-indicator-activate-australia.svg") !important;
+  }
 }
 
 .map-container img {
@@ -725,8 +804,8 @@ label.confirm {
 
 .sec-05-lists li.active {
   background-color: transparent;
-  border-color:var(--clr-white);
-  background-image: url('../img/badge-bg-selected.svg');
+  border-color: var(--clr-white);
+  background-image: url("../img/badge-bg-selected.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -734,7 +813,7 @@ label.confirm {
 .sec-05-lists li {
   position: relative;
   border-radius: var(--radius);
-  background: rgba(255,255,255,0.28);
+  background: rgba(255, 255, 255, 0.28);
   border: 1px solid transparent;
   transition: all var(--trans-300);
   height: 100%;
@@ -748,11 +827,11 @@ label.confirm {
   box-shadow: 0px 0px 40px 0px rgba(84, 146, 206, 0.7);
 }
 
-.sec-05-lists li img{
+.sec-05-lists li img {
   transition: scale 0.3s;
 }
 
-.sec-05-lists li:hover img{
+.sec-05-lists li:hover img {
   scale: 1.3;
 }
 
@@ -1120,13 +1199,13 @@ label.confirm {
   }
 }
 
-.sec-hero .o-container .wrap{
-  background-image: url('../img/hero-backbround.svg');
+.sec-hero .o-container .wrap {
+  background-image: url("../img/hero-backbround.svg");
   background-size: cover;
   padding: 8.75rem 10rem 12.5rem;
 }
 
-.hero-bg{
+.hero-bg {
   position: absolute;
   right: 0px;
   top: -8.75rem;
@@ -1138,7 +1217,7 @@ label.confirm {
   justify-content: center;
 }
 
-.hero-bg svg{
+.hero-bg svg {
   width: 100%;
   max-width: 860px;
 }
@@ -1163,33 +1242,33 @@ label.confirm {
     padding-top: 8rem;
   }
 
-  .sec-hero .o-container .wrap{
+  .sec-hero .o-container .wrap {
     padding: 4rem;
   }
 
-  .sec-hero .hero-content{
+  .sec-hero .hero-content {
     width: 100%;
     min-width: 0px;
   }
 }
 
 @media screen and (max-width: 460px) {
-  .sec-hero .hero-content .desc br{
+  .sec-hero .hero-content .desc br {
     display: none;
   }
 
-  .sec-hero .hero-bg{
+  .sec-hero .hero-bg {
     min-width: 0px;
     max-width: none;
     width: 100%;
   }
 }
 
-.sec-03 .tab-content-lists .secondary{
+.sec-03 .tab-content-lists .secondary {
   opacity: 0.8;
 }
 
-.map-container{
+.map-container {
   display: flex;
   justify-content: center;
   align-items: center;
